@@ -1,0 +1,23 @@
+.column-wrapper{
+    @include center;
+    justify-content: space-between;
+}
+.column-text__title{
+    width: 471px;
+    @include title;
+    color: $darkBlue;
+    margin-bottom: 24px;
+}
+.column-text__descr{
+    width: 471px;
+    @include descr;
+    margin-bottom: 40px;
+}
+.column-img{
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    img{
+        border-radius: 50%;
+    }
+}

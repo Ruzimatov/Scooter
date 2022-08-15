@@ -1,0 +1,20 @@
+.city{
+    margin-bottom: 160px;
+}
+
+.city-img{
+    position: relative;
+    box-shadow: -550px 0 #E5ECF4;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 735px;
+        height: 100px;
+        top: 65%;
+        right: -150px;
+        background-image: url(../assets/icons/array\ right.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 5;
+    }
+}

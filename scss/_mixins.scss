@@ -1,0 +1,27 @@
+@mixin descr{
+    color: $darkDescrText;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+}
+@mixin btn{
+    padding: 14px 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+}
+@mixin title{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1;
+}
+@mixin center{
+    display: flex;
+    align-items: center;
+    a{
+        text-decoration: none;
+    }
+}

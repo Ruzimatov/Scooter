@@ -1,0 +1,11 @@
+.btn{
+    @include btn;
+    border: none;
+    width: 180px;
+    background-color: $mainYellow;
+    text-align: center;
+    a{
+        color: $white;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,124 @@
+.intro {
+  width: 100%;
+  background-image: url(../assets/images/descktop-intro-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow-x: hidden;
+  margin-bottom: 160px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2f3b59;
+    background-position: 100% 100%;
+    opacity: 0.75;
+  }
+}
+.intro-text {
+  margin: 153px 0 152px 0;
+  position: relative;
+}
+.intro-title {
+  width: 515px;
+  font-size: 56px;
+  letter-spacing: -2.5px;
+  line-height: 1;
+  font-family: "Space Mono";
+  color: $white;
+  margin-bottom: 40px;
+}
+.intro-descr {
+  width: 405px;
+  color: $white !important;
+  @include descr;
+  margin-bottom: 40px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(../assets/icons/line.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 40px;
+    left: -310px;
+    width: 260px;
+    height: 15px;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url(../assets/icons/array\ right.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 40px;
+    right: -445px;
+    width: 420px;
+    height: 137px;
+  }
+}
+.intro-text__items {
+  margin-left: 95px;
+}
+@media only screen and(max-width: $tablet) {
+  .intro {
+    background-image: url(../assets/images/tablet-intro-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 113px;
+  }
+  .intro-text {
+    width: 100%;
+    max-width: 573px;
+    margin: 135px auto 215px;
+    text-align: center;
+  }
+  .intro-text__items {
+    margin-left: 0;
+  }
+  .intro-title {
+    width: 573px;
+  }
+  .intro-descr {
+    width: 573px;
+    &::before{
+      content: none;
+    }
+    &::after{
+      content: '';
+      top: 200px;
+      left: -210px;
+    }
+  }
+
+}
+@media only screen and(max-width: $mobile) {
+  .intro {
+    background-image: url(../assets/images/mobile-intro-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 120px;
+  }
+  .intro-text {
+    width: 100%;
+    max-width: 311px;
+    margin: 115px auto 179px;
+    text-align: center;
+  }
+  .intro-text__items {
+    margin-left: 0;
+  }
+  .intro-title {
+    width: 311px;
+    font-size: 40px;
+    line-height: 1;
+  }
+  .intro-descr {
+    width: 311px;
+    &::after{
+      top: 220px;
+      left: -325px;
+    }
+  }
+}
