@@ -9,12 +9,40 @@
         content: '';
         position: absolute;
         width: 735px;
-        height: 100px;
-        top: 65%;
-        right: -150px;
-        background-image: url(../assets/icons/array\ right.svg);
+        height: 160px;
+        top: 0;
+        left: -550PX;
+        background-image: url(../assets/icons/array\ left.svg);
         background-size: cover;
         background-repeat: no-repeat;
         z-index: 5;
+        transform: rotateY(180deg);
     }
 }
+@media only screen and(max-width: $tablet){
+    .city-wrapper{
+        flex-direction: column;
+    }
+    .city-img{
+        margin-bottom: 56px;
+        &::after{
+            content: '';
+            width: 745px;
+            right: -165px;
+        }
+    }
+}
+@media only screen and(max-width: $mobile){
+    .city-img{
+     width: 311px;
+     height: 311px;
+     box-shadow: none;
+     margin-bottom: 56px;
+     &::after{
+         content: '';
+         position: absolute;
+         right: -520px;
+         top: 0;
+     }
+    }
+ }

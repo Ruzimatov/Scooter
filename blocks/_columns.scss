@@ -21,3 +21,37 @@
         border-radius: 50%;
     }
 }
+@media only screen and(max-width: $tablet){
+    .column{
+        width: 100%;
+        margin-bottom: 128px;
+        overflow-x: hidden;
+    }
+    .column-wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .column-text{
+        text-align: center;
+    }
+    .column-text__descr{
+        margin: 40px 0;
+    }
+}
+@media only screen and(max-width: $mobile){
+    .column{
+     width: 100%;
+     overflow-x: hidden;
+     margin-bottom: 120px;
+    }
+    .column-text__title{
+     margin: 0 auto;
+     width: 314px;
+     font-size: 32px;
+     line-height: 1;
+    }
+    .column-text__descr{
+     width: 314px;
+     margin: 32px auto;
+    }
+ }

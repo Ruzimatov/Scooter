@@ -1,0 +1,45 @@
+.payment{
+    margin-bottom: 160px;
+    overflow-x: hidden;
+}
+
+.payment-img{
+    position: relative;
+    box-shadow: 550px 0 #E5ECF4;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 740px;
+        height: 150px;
+        top: 20%;
+        right: -550px;
+        background-image: url(../assets/icons/array\ left.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 5;
+    }
+}
+@media only screen and(max-width: $tablet){
+    .payment-img{
+        margin-bottom: 56px;
+        &::after{
+            content: '';
+            width: 745px;
+            right: -550px;
+        }
+    }
+}
+@media only screen and(max-width: $mobile){
+   .payment-img{
+    width: 311px;
+    height: 311px;
+    box-shadow: none;
+    margin-bottom: 56px;
+    &::after{
+        content: '';
+        position: absolute;
+        right: -433px;
+        top: 50%;
+    }
+   }
+}

@@ -19,13 +19,6 @@
     }
 }
 @media only screen and(max-width: $tablet){
-    .telemetry{
-        width: 100%;
-    }
-    .telemetry-wrapper{
-        display: flex;
-        flex-direction: column-reverse;
-    }
     .telemetry-img{
         margin-bottom: 56px;
         &::after{
@@ -34,18 +27,8 @@
             right: -165px;
         }
     }
-    .telemetry-text{
-        text-align: center;
-    }
-    .telemetry-text__descr{
-        margin: 40px 0;
-    }
 }
 @media only screen and(max-width: $mobile){
-   .telemetry{
-    width: 100%;
-    overflow-x: hidden;
-   }
    .telemetry-img{
     width: 311px;
     height: 311px;
@@ -57,15 +40,5 @@
         right: -433px;
         top: 50%;
     }
-   }
-   .telemetry-text__title{
-    margin: 0 auto;
-    width: 314px;
-    font-size: 32px;
-    line-height: 1;
-   }
-   .telemetry-text__descr{
-    width: 314px;
-    margin: 32px auto;
    }
 }
