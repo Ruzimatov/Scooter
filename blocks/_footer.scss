@@ -26,6 +26,10 @@
 }
 .soc-icons{
     fill: $mainYellow;
+    transition: .2s ease;
+    &:hover{
+        fill: $white;
+    }
 }
 @media only screen and(max-width:$tablet){
     .container{

@@ -4,6 +4,16 @@
     width: 180px;
     background-color: $mainYellow;
     text-align: center;
+    border: 2px solid $mainYellow;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        background-color: transparent;
+        border: 2px solid $mainYellow;
+    }
+    &:hover a{
+        color: $mainYellow;
+    }
     a{
         color: $white;
         text-decoration: none;

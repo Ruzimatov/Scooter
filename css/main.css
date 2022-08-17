@@ -383,6 +383,16 @@ template {
   width: 180px;
   background-color: #FCB72B;
   text-align: center;
+  border: 2px solid #FCB72B;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid #FCB72B;
+}
+.btn:hover a {
+  color: #FCB72B;
 }
 .btn a {
   color: #fff;
@@ -618,7 +628,7 @@ template {
   content: "";
   position: absolute;
   top: 40px;
-  left: -200px;
+  left: 0;
   width: 970px;
   height: 15px;
   background-color: #E5ECF4;
@@ -701,8 +711,8 @@ template {
   .options::before {
     content: "";
     width: 15px;
-    height: 512px;
-    left: 65px;
+    height: 514px;
+    left: 160px;
     top: -112px;
   }
 }
@@ -1084,6 +1094,10 @@ template {
 
 .soc-icons {
   fill: #FCB72B;
+  transition: 0.2s ease;
+}
+.soc-icons:hover {
+  fill: #fff;
 }
 
 @media only screen and (max-width: 1113px) {
